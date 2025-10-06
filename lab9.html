@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 9 - HTML Lists, Forms, and Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>1. HTML Lists</h2>
+
+    <!-- Unordered List -->
+    <h3>Unordered List Example</h3>
+    <ul>
+        <li>Fruit
+            <ul>
+                <li>Bananas</li>
+                <li>Apples
+                    <ul>
+                        <li>Green</li>
+                        <li>Red</li>
+                    </ul>
+                </li>
+                <li>Pears</li>
+            </ul>
+        </li>
+        <li>Vegetables</li>
+        <li>Meat</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h3>Ordered List Example</h3>
+    <ol>
+        <li>Fruit
+            <ul>
+                <li>Apples</li>
+                <li>Oranges</li>
+                <li>Pears</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Broccoli</li>
+                <li>Peas</li>
+                <li>Corn</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>2. HTML Form</h2>
+    <h3>Pizza Shop 1.0</h3>
+
+    <form>
+        <table class="form-table">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+                <td>Pizza Topping:</td>
+                <td>
+                    <input type="radio" name="topping" value="supreme"> Supreme<br>
+                    <input type="radio" name="topping" value="vegetarian"> Vegetarian<br>
+                    <input type="radio" name="topping" value="hawaiian"> Hawaiian
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pizza Sauce:</td>
+                <td>
+                    <select name="sauce">
+                        <option>Tomato</option>
+                        <option>Barbecue</option>
+                        <option>Garlic</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Optional Extras:</td>
+                <td>
+                    <input type="checkbox" name="extra" value="cheese"> Extra Cheese<br>
+                    <input type="checkbox" name="extra" value="gluten"> Gluten Free Base
+                </td>
+            </tr>
+
+            <tr>
+                <td>Delivery Instructions:</td>
+                <td><textarea name="instructions" rows="3" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Send my Order">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2>3. HTML Table with Colors</h2>
+
+    <table class="color-table">
+        <tr>
+            <td class="cell1" colspan="4">1</td>
+        </tr>
+        <tr>
+            <td class="cell2" rowspan="2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4" colspan="2">4</td>
+        </tr>
+        <tr>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+        </tr>
+        <tr>
+            <td class="cell7" colspan="4">7</td>
+        </tr>
+    </table>
+
+</body>
+</html>
